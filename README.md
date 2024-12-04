@@ -4,7 +4,7 @@
 
 [Arxiv] [Project Page] [Model] [Raw Results]
 
-https://github.com/user-attachments/assets/7c99f6b4-d169-436b-b077-4bcacbce922f
+https://github.com/user-attachments/assets/37eeaa24-2788-4a89-927c-85184899a7eb
 
 
 ## Getting Started
