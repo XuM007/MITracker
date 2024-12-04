@@ -1,1 +1,44 @@
-# MITracker
+# MITracker: Multi-View Integration for Visual Object Tracking
+
+[Mengjie Xu](https://xum007.github.io/), [Yitao Zhu](https://absterzhu.github.io/), Haotian Jiang, Jiaming Li, [Zhenrong Shen](https://zhenrongshen.github.io/), [Sheng Wang](http://shengwang.link/), Haolin Huang, Xinyu Wang, Han Zhang, Qing Yang, [Qian Wang](https://qianwang.space/)
+
+[[Arxiv]](https://arxiv.org/abs/2411.11922) [[Project Page]](https://xum007.github.io/MITracker.github.io/#) [Model] [Raw Results]
+
+https://github.com/user-attachments/assets/7c99f6b4-d169-436b-b077-4bcacbce922f
+
+
+## Getting Started
+
+### Environment Installation
+```
+conda create -n mittracker python=3.9
+conda activate mittracker
+bash install.sh
+```
+
+### Data Preparation
+Please download the [MVTrack (coming)], and prepare the data in the following format:
+```
+data/MVTrack
+├── ashbin1/
+│   ├── ashbin1-1/
+│   │   ├── img
+│   │   ├── groundtruth.txt
+│   │   └── invisible.txt
+│   ├── ashbin1-2/
+│   ├── ...
+├── ashbin3
+├── bag1
+├── basketball5
+...
+├── calibs.json
+├── mvtrack_test_split.txt
+├── mvtrack_train_split.txt
+└── mvtrack_val_split.txt
+```
+
+## Usage
+**Coming soon.**
+
+## Acknowledgments
+* Thanks to the [ODTrack](https://github.com/GXNU-ZhongLab/ODTrack) and [TrackTacular](https://github.com/tteepe/TrackTacular) libraries for enabling quick implementation of our ideas.
