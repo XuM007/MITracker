@@ -2,7 +2,7 @@
 
 [Mengjie Xu](https://xum007.github.io/), [Yitao Zhu](https://absterzhu.github.io/), Haotian Jiang, Jiaming Li, [Zhenrong Shen](https://zhenrongshen.github.io/), [Sheng Wang](http://shengwang.link/), Haolin Huang, Xinyu Wang, Han Zhang, Qing Yang, [Qian Wang](https://qianwang.space/)
 
-[[Arxiv]](https://arxiv.org/abs/2411.11922) [[Project Page]](https://xum007.github.io/MITracker.github.io/#) [Model] [Raw Results]
+[Arxiv] [Project Page] [Model] [Raw Results]
 
 https://github.com/user-attachments/assets/7c99f6b4-d169-436b-b077-4bcacbce922f
 
