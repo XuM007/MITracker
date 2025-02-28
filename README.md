@@ -2,7 +2,7 @@
 
 <!--[Mengjie Xu](https://xum007.github.io/), [Yitao Zhu](https://absterzhu.github.io/), Haotian Jiang, Jiaming Li, [Zhenrong Shen](https://zhenrongshen.github.io/), [Sheng Wang](http://shengwang.link/), [Haolin Huang](https://scholar.google.com/citations?user=Hr87lqsAAAAJ&hl=zh-CN), Xinyu Wang, Qing Yang, Han Zhang, [Qian Wang](https://qianwang.space/) -->
 
-The official implementation for the CVPR 2025 paper [MITracker: Multi-View Integration for Visual Object Tracking].
+The official implementation for the CVPR 2025 paper [[MITracker: Multi-View Integration for Visual Object Tracking](https://export.arxiv.org/pdf/2502.20111)].
 
 [[Project Page](https://mii-laboratory.github.io/MITracker/)] [Model] [Raw Results]
 
