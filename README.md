@@ -25,7 +25,7 @@ data/MVTrack
 ├── ashbin1/
 │   ├── ashbin1-1/
 │   │   ├── img
-│   │   ├── groundtruth.txt
+│   │   ├── groundtruth.txt 
 │   │   └── invisible.txt
 │   ├── ashbin1-2/
 │   ├── ...
