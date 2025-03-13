@@ -44,3 +44,15 @@ data/MVTrack
 
 ## Acknowledgments
 * Thanks to the [ODTrack](https://github.com/GXNU-ZhongLab/ODTrack) and [TrackTacular](https://github.com/tteepe/TrackTacular) libraries for enabling quick implementation of our ideas.
+
+## Citation
+
+If you find our paper and code useful for your research and applications, please cite using this BibTeX:
+```bibtex 
+@article{xu2025mitracker,
+  title={MITracker: Multi-View Integration for Visual Object Tracking},
+  author={Xu, Mengjie and Zhu, Yitao and Jiang, Haotian and Li, Jiaming and Shen, Zhenrong and Wang, Sheng and Huang, Haolin and Wang, Xinyu and Yang, Qing and Zhang, Han and others},
+  journal={arXiv preprint arXiv:2502.20111},
+  year={2025}
+}
+```
