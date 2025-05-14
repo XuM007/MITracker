@@ -1,0 +1,79 @@
+DATA:
+  MAX_SAMPLE_INTERVAL: 200
+  MEAN: 
+  - 0.485
+  - 0.456
+  - 0.406
+  STD: 
+  - 0.229
+  - 0.224
+  - 0.225
+  SEARCH:
+    CENTER_JITTER: 4.5
+    FACTOR: 5.0 
+    SCALE_JITTER: 0.5 
+    SIZE: 364 
+    NUMBER: 2
+  TEMPLATE:
+    CENTER_JITTER: 0 
+    FACTOR: 2.0 
+    SCALE_JITTER: 0 
+    SIZE: 182 
+    NUMBER: 1 
+  TRAIN:
+    DATASETS_NAME: 
+    - MVTrack_train
+    - GOT10K_train_full
+    DATASETS_SAMPLER: sot
+    DATASETS_RATIO: 
+    - 1 
+    - 1
+    SAMPLE_PER_EPOCH: 40000 
+  VAL:
+    DATASETS_NAME: 
+    - MVTrack_val
+    DATASETS_RATIO: 
+    - 1
+    SAMPLE_PER_EPOCH: 10000  
+    
+MODEL:
+  PRETRAIN_FILE: "dinov2_vitb14_pretrain.pth"  
+  RETURN_INTER: False 
+  BACKBONE:
+    TYPE: vit_base_patch14_518_dinov2 
+    STRIDE: 14 
+    ADD_CLS_TOKEN: True             
+    ATTN_TYPE: concat               
+  HEAD:
+    TYPE: CENTER 
+    NUM_CHANNELS: 256 
+
+TRAIN:
+  BBOX_TASK: True 
+  BACKBONE_MULTIPLIER: 0.1 
+  DROP_PATH_RATE: 0.1 
+  BATCH_SIZE: 32 
+  NUM_WORKER: 8 
+  EPOCH: 70 
+  LR_DROP_EPOCH: 60 
+  GIOU_WEIGHT: 2.0
+  L1_WEIGHT: 5.0
+  GRAD_CLIP_NORM: 0.1 
+  LR: 0.0001 
+  OPTIMIZER: ADAMW 
+  PRINT_INTERVAL: 200 
+  SCHEDULER:
+    TYPE: step 
+    DECAY_RATE: 0.1 
+  VAL_EPOCH_INTERVAL: 10 
+  WEIGHT_DECAY: 0.0001
+  AMP: False 
+
+TEST:
+  EPOCH: 70 
+  SEARCH_FACTOR: 5.0 
+  SEARCH_SIZE: 364 
+  TEMPLATE_FACTOR: 2.0 
+  TEMPLATE_SIZE: 182 
+  TEMPLATE_NUMBER: 1
+  MEMORY_THRESHOLD: 1000 
