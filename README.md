@@ -85,7 +85,7 @@ Replace `--config` with the desired model config under `experiments/mitracker_st
 
 ### Second stage
 
-To enable multi-view integration module training, replace `experiments/mitracker/*.yaml` PRETRAIN_PTH in the yaml configuration file with the path to your pretrained checkpoint, such as './output/checkpoints/train/mitracker_stage1/baseline/MITrackerStage1_ep0070.pth.tar'.
+To enable multi-view integration module training, replace `experiments/mitracker/*.yaml` PRETRAIN_PTH in the yaml configuration file with the path to your pretrained checkpoint, such as './output/checkpoints/train/mitracker_stage1/baseline/MITrackerStage1_ep0050.pth.tar'.
 
 ```
 python tracking/train.py --script mitracker --config baseline --save_dir ./output --mode multiple --nproc_per_node 2
@@ -97,8 +97,8 @@ python tracking/train.py --script mitracker --config baseline --save_dir ./outpu
 MVTrack, GMTD or other off-line evaluated benchmarks (modify `--dataset` correspondingly)
 - `mvtrack_sot_test` for single-view test, `mvtrack_mot_test` for multi-view test
 ```
-python tracking/test.py mitracker_stage1 baseline --dataset mvtrack_sot_test --runid 70 --threads 8 --num_gpus 2 --restart 0
-python tracking/test.py mitracker baseline --dataset mvtrack_mot_test --runid 50 --threads 8 --num_gpus 2 --restart 0
+python tracking/test.py mitracker_stage1 baseline --dataset mvtrack_sot_test --runid 50 --threads 8 --num_gpus 2 --restart 0
+python tracking/test.py mitracker baseline --dataset mvtrack_mot_test --runid 40 --threads 8 --num_gpus 2 --restart 0
 python tracking/analysis_results.py # need to modify tracker configs and names
 ```
 

@@ -40,7 +40,7 @@ DATA:
 
 MODEL:
   PRETRAIN_FILE: " "
-  PRETRAIN_PTH: "./output/checkpoints/train/mitracker_stage1/baseline/MITrackerStage1_ep0070.pth.tar"
+  PRETRAIN_PTH: "./output/checkpoints/train/mitracker_stage1/baseline/MITrackerStage1_ep0050.pth.tar"
   PRETRAIN_LAYER:
   - 'backbone'
   RETURN_INTER: False
@@ -67,8 +67,8 @@ TRAIN:
   DROP_PATH_RATE: 0.1 
   BATCH_SIZE: 4 
   NUM_WORKER: 8 
-  EPOCH: 50 
-  LR_DROP_EPOCH: 40 
+  EPOCH: 40 
+  LR_DROP_EPOCH: 30 
   GIOU_WEIGHT: 2.0 
   L1_WEIGHT: 5.0 
   BEV_WEIGHT: 0.1 
@@ -84,7 +84,7 @@ TRAIN:
   AMP: False 
   
 TEST:
-  EPOCH: 50
+  EPOCH: 40
   SEARCH_FACTOR: 5.0
   SEARCH_SIZE: 364 
   TEMPLATE_FACTOR: 2.0 
