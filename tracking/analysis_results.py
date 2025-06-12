@@ -12,13 +12,13 @@ trackers = []
 
 result = 'OPE' # 'R-OPE' or 'OPE'
 
-trackers.extend(trackerlist(name='mitracker_stage1', parameter_name='baseline', dataset_name=dataset_name,run_ids=70, result_type = 'mvtrack_sot', display_name='MITrackerStage1'))
-trackers.extend(trackerlist(name='mitracker', parameter_name='baseline', dataset_name=dataset_name,run_ids=50, result_type = 'mvtrack_mot', display_name='MITracker'))
+trackers.extend(trackerlist(name='mitracker_stage1', parameter_name='baseline', dataset_name=dataset_name,run_ids=50, result_type = 'mvtrack_sot', display_name='MITrackerStage1'))
+trackers.extend(trackerlist(name='mitracker', parameter_name='baseline', dataset_name=dataset_name,run_ids=40, result_type = 'mvtrack_mot', display_name='MITracker'))
 
 # result = 'R-OPE' # 'R-OPE' or 'OPE'
 
-# trackers.extend(trackerlist(name='mitracker_stage1', parameter_name='baseline', dataset_name=dataset_name,run_ids=70, result_type = 'mvtrack_sot_restart', display_name='MITrackerStage1'))
-# trackers.extend(trackerlist(name='mitracker', parameter_name='baseline', dataset_name=dataset_name,run_ids=50, result_type = 'mvtrack_mot_restart', display_name='MITracker'))
+# trackers.extend(trackerlist(name='mitracker_stage1', parameter_name='baseline', dataset_name=dataset_name,run_ids=50, result_type = 'mvtrack_sot_restart', display_name='MITrackerStage1'))
+# trackers.extend(trackerlist(name='mitracker', parameter_name='baseline', dataset_name=dataset_name,run_ids=40, result_type = 'mvtrack_mot_restart', display_name='MITracker'))
 
 dataset = get_dataset(dataset_name)
 
